@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Static Site</title>
+  <meta name="description" content="Minimal static site deployed on GitHub Pages." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav">
+      <a href="/" class="brand">MySite</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Hello, world</h1>
+    <p id="msg">Running locally.</p>
+
+    <section class="card">
+      <h2>Click counter</h2>
+      <p>Count: <span id="count">0</span></p>
+      <button id="btn">Click</button>
+      <button id="reset">Reset</button>
+    </section>
+
+    <section class="card">
+      <h2>Environment</h2>
+      <ul id="env"></ul>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <small>&copy; <span id="year"></span> You. Deployed on GitHub Pages.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
